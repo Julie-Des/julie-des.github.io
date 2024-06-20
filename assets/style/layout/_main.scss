@@ -1,0 +1,121 @@
+main {
+    width: 85%;
+    background: $white;
+    margin: 0 auto 30px;
+}
+
+.section-1 {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    span {
+    font-family: $font2;
+    padding: 70px 0;
+    display: inline-block;
+    position: relative;
+    }
+
+    span::before {
+        content: "";
+        background: $grey2;
+        height: 2px;
+        width: 290%;
+        position: absolute;
+        bottom: 50%;
+        transform: translateX(-125%);
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+        }
+    }
+
+    span::after {
+        content:"";
+        background: $grey2;
+        height: 2px;
+        width: 290%;
+        position: absolute;
+        bottom: 50%;
+        transform: translateX(25%);
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        @include title;
+        font-size: 3rem;
+        @media screen and (max-width: 900px) {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        font-family: $font2;
+        font-size: 0.8rem;
+        font-style: italic;
+        line-height: 35px;
+        margin: 30px auto;
+        width: 60%;
+        justify-content: justify;
+    }
+    .button {
+        margin: 50px auto 90px;
+    }
+}
+
+.img1 {
+    background: url(/assets/images/pic01.jpg) center/cover;
+    height: 70vh;
+    max-width: 100%;
+    @media screen and (max-width: 750px) {
+        height:30vh;
+    }
+}
+
+.section-2 {
+    display: flex;
+    border-top: 1px solid $grey1;
+    @media screen and (max-width: 900px) {
+        display: block;
+    }
+    .container {
+        padding: 60px;
+    }
+    span {
+        font-size: 0.75rem;
+    }
+    h3 {
+        @include title;
+        letter-spacing: 2px;
+        line-height: 28px;
+        margin: 20px 0;
+    }
+    p {
+        font-family: $font2;
+        font-size: 0.8rem;
+        line-height: 30px;
+        margin: 30px 0;
+        text-align: left;
+    }
+}
+
+.img2 {
+    background: url(/assets/images/pic02.jpg) center/cover;
+    height: 290px;
+    @media screen and (max-width: 750px) {
+        height: 25vh;
+    }
+}
+
+.img3 {
+    background: url(/assets/images/pic03.jpg) center/cover;
+    height: 290px;
+    @media screen and (max-width: 750px) {
+        height: 25vh;
+    }
+}
+
+.section-2-left {
+    border-right: 1px solid $grey1;
+}
+
