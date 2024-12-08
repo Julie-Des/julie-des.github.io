@@ -1,0 +1,51 @@
+.dishes {
+
+    &__check {
+        @include height-width(65px, 59px);
+        @include radius-right;
+        background-color: $ligth-green;
+        box-sizing: border-box;
+        text-align: center;
+        align-content: center;
+        opacity: 0;
+        
+        .fa-check {
+            @include background-padding($white, 3px);
+            border-radius: 20px;
+            border: 1px solid $ligth-green;
+            color: $ligth-green; 
+        }
+    }
+
+    &:hover {
+        & > .dishes__check {
+            animation: check-anim 0.8s forwards;
+        }   
+        
+        .content__price {
+            animation: price-anim 0.8s forwards;
+        }
+    }
+}
+
+@keyframes check-anim {
+    0% {
+        transform: translateX(70px);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes price-anim {
+    0% {
+        transform: translateX(55px)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

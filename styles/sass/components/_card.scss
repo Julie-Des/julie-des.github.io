@@ -1,0 +1,42 @@
+.card {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+
+    img {
+        @include radius-top(15px);
+        @include height-width(175px, 100%);
+        object-fit: cover;
+
+        @include media-desktop {
+            height: 150px;
+        }
+    }
+
+    span {
+        @include background-padding($ligth-green, 7px 9px);
+        @include size-weight(0.875rem, 500);
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: $dark-green;
+    }
+
+    &__content {
+        text-align: left;
+        padding: 13px;
+        position: relative;
+
+        h3 {
+            @include size-weight(1.125rem, 700);
+        }
+
+        p {
+            @include size-weight(1.063rem, 300);
+        }  
+
+        .fa-heart {
+            @include heart(50%, 88%, 50%);
+        }
+    }
+}

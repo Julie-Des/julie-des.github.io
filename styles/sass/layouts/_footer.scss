@@ -1,0 +1,44 @@
+footer {
+    @include background-padding($dark-grey, 22px 25px);
+    @include flex-column(16px);
+    text-align: left;
+    color: $white;
+
+    h4 {
+        @include fontshrikhand(1.125rem);
+    }
+
+    ul {
+        @include flex-column(7px);
+
+        li {
+            @include size-weight(1rem, 500);
+
+            &:nth-child(-n + 2) {
+                @include grid-column(3% 97%, 12px);
+            }
+
+            .fa-utensils {
+                font-size: 0.8rem;
+            }
+            .fa-handshake-angle {
+                font-size: 0.62rem;
+            }
+        }
+
+        @include media-tablet {
+            flex-direction: row;
+        }
+    }
+
+    @include media-tablet {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 30px 50px 22px 25px;
+        gap: 30px;
+    }
+
+    @include media-desktop {
+        gap: 70px;
+    }
+}

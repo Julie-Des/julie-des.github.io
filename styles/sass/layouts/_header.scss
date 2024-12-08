@@ -1,0 +1,14 @@
+header {
+    position: relative;
+    
+    span {
+        @include size-weight(1.45rem, 900);
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        color: $dark-grey;
+    }
+    .logo {
+        padding: 14px 0px 8px;
+    }
+}

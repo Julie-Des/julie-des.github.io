@@ -3,115 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Montagne</title>
-    <link rel="stylesheet" href="./assets/style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-
-<header>
-    <div class="title-container">
-        <h1>La montagne<br>ça vous gagne</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus vel maxime earum a vero?</p>
-        <span><a href="#section-1"><i class="fa-solid fa-arrow-down"></i></a></span>
-    </div>
-    <nav>
-        <ul class="nav-text">
-            <li>this is massively</li>
-            <li>generic page</li>
-            <li>elements reference</li>
-        </ul>
-        <ul class="nav-logos">
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
+    <header>
+        <img class="logo" src="./assets/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+    </header>
+    <main>
+        <div class="location">
+            <form action="#">
+                <i class="fa-solid fa-location-dot location__icon"></i>
+                <input class="location__input" type="text" placeholder="Paris, Belleville" readonly>  
+            </form>
+        </div>
+        <div class="loader">
+            <div class="loader__content">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        <section class="intro">
+            <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+            <p class="intro__content">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a class="intro__link button" href="#restaurants">Explorer nos restaurants</a>
+        </section>
+        <section class="functioning">
+            <h2 class="functioning__title">Fonctionnement</h2>
+            <ul class="functioning__list">
+                <li><span>1</span><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+                <li><span>2</span><i class="fa-solid fa-list"></i>Composez votre menu</li>
+                <li><span>3</span><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+            </ul>
+        </section>
+        <section class="restaurants" id="restaurants">
+            <h2 class="restaurants__title">Restaurants</h2>
+            <div class="restaurants__card">
+                <a href="./restaurants/menu-La-palette-du-gout.html">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Nourriture dans une assiette">
+                        <span>Nouveau</span>
+                        <div class="card__content">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                            <i class="fa-solid fa-heart fa-heart-full"></i>
+                            <i class="fa-regular fa-heart fa-heart-empty"></i>
+                        </div>
+                    </article>
                 </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>  
+                <a href="./restaurants/menu-La-note-enchantee.html">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Nourriture dans une assiette">
+                        <span>Nouveau</span>
+                        <div class="card__content">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                            <i class="fa-solid fa-heart fa-heart-full"></i>
+                            <i class="fa-regular fa-heart fa-heart-empty"></i>
+                        </div>
+                    </article>
                 </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>  
-                </a> 
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>  
-                </a> 
-            </li>
+                <a href="./restaurants/menu-A-la-française.html">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Nourriture dans une assiette">
+                        <div class="card__content">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                            <i class="fa-solid fa-heart fa-heart-full"></i>
+                            <i class="fa-regular fa-heart fa-heart-empty"></i>
+                        </div>
+                    </article>
+                </a>
+                <a href="./restaurants/menu-Le-delice-des-sens.html">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Nourriture dans une assiette">
+                        <div class="card__content">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                            <i class="fa-solid fa-heart fa-heart-full"></i>
+                            <i class="fa-regular fa-heart fa-heart-empty"></i>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>ohmyfood</h4>
+        <ul>
+            <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+            <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
+            <li><a href="">Mentions légales</a></li>
+            <li><a href="mailto:exemple@gmail.com">Contact</a></li>
         </ul>
-    </nav>
-</header>
-
-<main>
-<section class="section-1" id="section-1">
-        <span id="date">April 25, 2017</span>
-        <h2>and this a<br>massive headline</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatum nam autem nemo quasi aperiam odit dolore temporibus quibusdam qui nisi non! Ducimus, vitae architecto?</p>
-        <div class="img1"></div>
-        <button class="button">full story</button>
-</section>
-
-<section class="section-2">
-    <div class="section-2-left">
-        <div class="container">
-            <span id="date">April 24, 2017</span>
-            <h3>sed magna<br>ipsum faucibus</h3>
-            <div class="img2"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis facilis non minima expedita voluptatum dolorem quod minus, laboriosam distinctio totam?</p>
-            <button class="button">full story</button>
-        </div>
-    </div>
-    <div class="section-2-right">
-        <div class="container">
-            <span id="date">April 22, 2017</span>
-            <h3>primis eget<br>imperdiet lorem</h3>
-             <div class="img3"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis facilis non minima expedita voluptatum dolorem quod minus, laboriosam distinctio totam?</p>
-            <button class="button">full story</button>
-        </div>
-    </div>
-</section>
-</main>
-
-<footer>
-    <div class="footer-left">
-        <form action="">
-            <label for="name">name</label>
-            <input type="text" id="name">
-            <label for="email">email</label>
-            <input type="text" id="email">
-            <label for="message">message</label>
-            <textarea name="message" id="message"></textarea>
-            <input type="button" value="send message" id="btn-submit">
-        </form>
-    </div>
-    <div class="footer-right">
-        <div>
-        <h3>address</h3>
-        <p id="adress">1234 Sowhere Road #87257<br>Nashville, TN 00000-0000</p>
-        </div>
-        <div>
-        <h3>phone</h3>
-        <p>(000) 000-0000</p>
-        </div>
-        <div>
-        <h3>email</h3>
-        <p>info@untitled.ltd</p>
-        </div>
-        <div>
-        <h3>social</h3>
-        <ul class="footer-logos">
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-        </ul>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
