@@ -19,16 +19,7 @@ body {
 }
 
 .loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(246, 246, 246, 0.8392156863);
   z-index: 100;
@@ -40,17 +31,18 @@ body {
   -webkit-animation: stop 3s forwards;
           animation: stop 3s forwards;
 }
-@-webkit-keyframes stop {
-  100% {
-    visibility: hidden;
-  }
+.loader__position {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@keyframes stop {
-  100% {
-    visibility: hidden;
-  }
-}
-
 .loader__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,6 +75,7 @@ body {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
+
 @-webkit-keyframes grow-shrink {
   0%, 100% {
     -webkit-transform: scale(1);
@@ -93,6 +86,7 @@ body {
             transform: scale(1.5);
   }
 }
+
 @keyframes grow-shrink {
   0%, 100% {
     -webkit-transform: scale(1);
@@ -103,7 +97,16 @@ body {
             transform: scale(1.5);
   }
 }
-
+@-webkit-keyframes stop {
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes stop {
+  100% {
+    visibility: hidden;
+  }
+}
 .functioning__list li {
   background-color: #F6F6F6;
   padding: 25px 25px 25px 30px;
@@ -345,13 +348,16 @@ body {
   border: 1px solid #99E2D0;
   color: #99E2D0;
 }
-.dishes:hover > .dishes__check {
-  -webkit-animation: check-anim 0.8s forwards;
-          animation: check-anim 0.8s forwards;
+.dishes:hover .content__text {
+  width: 80%;
 }
 .dishes:hover .content__price {
   -webkit-animation: price-anim 0.8s forwards;
           animation: price-anim 0.8s forwards;
+}
+.dishes:hover > .dishes__check {
+  -webkit-animation: check-anim 0.8s forwards;
+          animation: check-anim 0.8s forwards;
 }
 
 @-webkit-keyframes check-anim {
@@ -573,8 +579,7 @@ footer ul li .fa-handshake-angle {
   background-color: #eaeaea;
   color: #353535;
   text-align: center;
-  width: 50%;
-  margin-left: 20px;
+  width: 65%;
 }
 .location__input::-webkit-input-placeholder {
   color: #353535;

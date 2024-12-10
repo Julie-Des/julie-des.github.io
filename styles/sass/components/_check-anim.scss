@@ -18,13 +18,17 @@
     }
 
     &:hover {
-        & > .dishes__check {
-            animation: check-anim 0.8s forwards;
-        }   
-        
+        .content__text {
+            width: 80%;
+        }
+
         .content__price {
             animation: price-anim 0.8s forwards;
         }
+
+        & > .dishes__check {
+            animation: check-anim 0.8s forwards;
+        }   
     }
 }
 
