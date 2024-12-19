@@ -23,9 +23,10 @@
 
         i {
             color: $grey-icone;
+            transition: 0.3s;
         }
 
-        &:nth-child(3) {
+        &:hover {
             i {
                 color: $purple;
             }

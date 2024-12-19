@@ -143,8 +143,10 @@ body {
 }
 .functioning__list li i {
   color: #7E7E7E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.functioning__list li:nth-child(3) i {
+.functioning__list li:hover i {
   color: #9356DC;
 }
 @media (min-width: 767px) {
