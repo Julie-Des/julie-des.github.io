@@ -4,7 +4,6 @@ const arrowLeft = document.querySelector(".arrow_left");
 const arrowRight = document.querySelector(".arrow_right");
 const dots = document.querySelectorAll(".dot");
 const textContainer = document.querySelector("#banner p");
-
 const slidesText = [
   "Impressions tous formats <span>en boutique et en ligne</span>",
   "Qualité professionnelle <span>et service sur mesure</span>",
@@ -12,14 +11,18 @@ const slidesText = [
   "Une équipe à votre écoute <span>pour tous vos projets</span>",
 ];
 
-let currentIndex = 0;
 
-arrowLeft.addEventListener("click", clickLeft);
-arrowRight.addEventListener("click", clickRight);
+// Initialisation du carrousel
+let currentIndex = 0;
 
 for (let i = 1; i < slides.length; i++) {
   slides[i].style.opacity = 0;
 }
+
+// Evénements au click 
+arrowLeft.addEventListener("click", clickLeft);
+arrowRight.addEventListener("click", clickRight);
+
 
 function clickLeft() {
   removeCurrentSlide();
