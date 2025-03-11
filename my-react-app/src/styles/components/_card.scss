@@ -1,0 +1,25 @@
+.card {
+    @include width-height(100%, 340px);
+    border-radius: 10px;
+    position: relative;
+    
+    .card-image {
+        @include width-height(100%, 100%);
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        @include size-weight(1.125rem, 700);
+        @include position-absolute-bottom-left(25px, 20px);
+        z-index: 10;
+        color: $white;
+        padding-right: 20px;
+        line-height: $line-height;
+    }
+
+    @include media-tablet {
+        height: 255px;
+    }
+}

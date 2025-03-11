@@ -1,0 +1,16 @@
+.rating {
+    @include flex-justify-content(flex-end);
+    gap: 15px;
+    align-items: center;
+
+    @include media-mobile {
+        gap: 7px;
+        justify-content: flex-start;
+    }
+
+    img {
+        @include media-mobile {
+            width: 10%;
+        }
+    }
+}

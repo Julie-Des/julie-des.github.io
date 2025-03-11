@@ -1,0 +1,17 @@
+.cards-container {
+    @include margin-side;
+    @include grid-cards-container($grey, 1fr 1fr 1fr, 55px 50px 40px 50px, 60px, 50px);
+    border-radius: 25px;
+    display: grid;
+
+
+    @include media-tablet {
+        @include margin-side-tablet;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-mobile {
+        @include margin-side-mobile;
+        @include grid-cards-container($white, 1fr, 0, 20px, 25px);
+    }
+}
