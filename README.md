@@ -1,3 +1,4 @@
-# Projet7-oc
+# Projet8-oc-after
 
-Créez une application web de location immobilière avec REACT
+Optimisez le référencement d'un site de photographe
+Site après optimisation
