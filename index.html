@@ -6,13 +6,16 @@
 		<title>Nina Carducci - photographe</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style"/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-		<link rel="stylesheet" href="./assets/style.min.css" />
-		<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-1920w-unsplash.webp" />
+		<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style"/>
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+		<link rel="preload" href="./assets/style.min.css" as="style"/>
+		<link rel="stylesheet" href="./assets/style.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+		<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-1920w-unsplash.webp" importance="hight"/>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -168,6 +171,7 @@
 							./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-570w-unsplash.webp 570w"
 							sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, (max-width: 992px) 33.33vw, 25vw"
 							alt="Concert"
+							loading="lazy"
 						/>
 						<img
 							data-gallery-tag="Entreprises"
@@ -334,7 +338,7 @@
 					<div class="picture right">
 						<img src="./assets/images/camera-420w.webp" 
 						srcset="./assets/images/camera-320w.webp 320w"
-						sizes="(max-width: 650px) 80vw, (max-width: 1000px) 50vw, (max-width: 1180px) 66vw, 1920px"
+						sizes="(max-width: 650px) 80vw, (max-width: 1000px) 50vw, (max-width: 1180px) 66vw, 420px"
 						alt="Appareil photo" loading="lazy" />
 					</div>
 				</div>
